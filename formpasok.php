@@ -18,7 +18,7 @@
             <div class="container">
 
                 <div class="card p-5 mt-5">
-                    <h4 class="mt-3 mb-3">Pasok</h4>
+                    <h4 class="mt-3 mb-3 text-center">Pasok</h4>
 
                     <form action="pasok.php" method="post">
                         <div class="mb-3">
