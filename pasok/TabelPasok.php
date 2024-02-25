@@ -1,34 +1,33 @@
 <?php
 
-include "koneksi_database.php";
+include "../koneksi_database.php";
 
-$tampilan = 'select * from distributor';
+$tampilan = 'select * from pasok';
 
 $hasil = $db->query($tampilan);
 
 ?>
 
 
-<?php include "layout/header.php" ?>
+<?php include "../layout/header.php" ?>
 <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
 
         <!-- Menu -->
-        <?php include "layout/sidebar.php" ?>
+        <?php include "../layout/sidebar.php" ?>
         <!-- / Menu -->
 
         <!-- Layout container -->
         <div class="layout-page">
 
             <!-- Navbar -->
-            <?php include "layout/navbar.php" ?>
+            <?php include "../layout/navbar.php" ?>
             <!-- / Navbar -->
 
             <div class="container">
 
                 <!-- awal table -->
-
                 <table class="table mt-5 mb-5">
                     <thead>
                         <tr>
@@ -46,15 +45,14 @@ $hasil = $db->query($tampilan);
                             <tr>
                                 <th scope="row"><?= $i; ?></th>
                                 <td><?= $dis['id_distributor']; ?></td>
-                                <td><?= $dis['nama_distributor']; ?></td>
-                                <td><?= $dis['alamat']; ?></td>
-                                <td><?= $dis['telepon']; ?></td>
+                                <td><?= $dis['id_buku']; ?></td>
+                                <td><?= $dis['jumlah']; ?></td>
+                                <td><?= $dis['tanggal']; ?></td>
                             </tr>
                             <?php $i++; ?>
                         <?php  }  ?>
                     </tbody>
                 </table>
-
                 <!-- akhir table -->
 
             </div>
@@ -63,4 +61,4 @@ $hasil = $db->query($tampilan);
     </div>
 </div>
 
-<?php include "layout/footer.php" ?>
+<?php include "../layout/footer.php" ?>

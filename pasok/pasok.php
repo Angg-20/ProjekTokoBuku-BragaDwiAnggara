@@ -2,8 +2,7 @@
 
 include "../koneksi_database.php";
 
-$data = "INSERT INTO pasok(id_pasok, id_distributor, id_buku, jumlah, tanggal) VALUES (
-        '" . $_POST['pasok'] . "',
+$data = "INSERT INTO pasok(id_distributor, id_buku, jumlah, tanggal) VALUES (
         '" . $_POST['id_distributor'] . "',
         '" . $_POST['id_buku'] . "',
         '" . $_POST['jumlah'] . "',
