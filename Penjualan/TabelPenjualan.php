@@ -35,12 +35,12 @@ $hasil = $db->query($tampilan);
                     <thead>
                         <tr>
                             <th scope="col">No</th>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Alamat</th>
-                            <th scope="col">Telepon</th>
-                            <th scope="col">status</th>
-                            <th scope="col">username</th>
-                            <!-- <th scope="col" class="text-center">Action</th> -->
+                            <th scope="col">Id Buku</th>
+                            <th scope="col">Id Kasir</th>
+                            <th scope="col">jumlah</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Tanggal</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -1,31 +1,57 @@
+<?php
+
+include "koneksi_database.php";
+
+$error = '';
+
+if (isset($_POST["login"])) {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $query = "SELECT * FROM kasir WHERE username = '$username'";
+    $result = mysqli_query($db, $query);
+
+    if ($result) {
+        if (mysqli_num_rows($result) === 1) {
+            $userData = mysqli_fetch_assoc($result);
+
+            if ($password === $userData['password']) {
+                header("Location: index.php");
+                exit();
+            } else {
+                $error = "Password salah. Silakan coba lagi.";
+            }
+        } else {
+            $error = "Username tidak ditemukan.";
+        }
+    } else {
+        $error = "Terjadi kesalahan. Silakan coba lagi.";
+    }
+}
+
+mysqli_close($db);
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="kotak">
-            <h1>Login</h1>
-
-            <form action="" method="post">
-                <div class="baris1">
-                    <label for="username">Username</label>
-                    <input name="username" type="text">
-                </div>
-                <div class="baris1">
-                    <label for="password">Password</label>
-                    <input name="password" type="password">
-                </div>
-                <button type="submit" style="margin-top: 100px;">Login</button>
-            </form>
-
-        </div>
+    <div class="login">
+        <h2>Login</h2>
+        <form action="" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" name="login">Login</button>
+            <?php if (!empty($error)): ?>
+                <p style="color: red;"><?php echo $error; ?></p>
+            <?php endif; ?>
+        </form>
     </div>
 </body>
 

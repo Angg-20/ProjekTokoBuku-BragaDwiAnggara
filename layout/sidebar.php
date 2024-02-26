@@ -99,9 +99,9 @@
     <li class="menu-header small text-uppercase"><span class="menu-header-text">Picture</span></li>
     
     <li class="menu-item">
-      <a href="tables-basic.html" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-detail"></i>
-        <div data-i18n="Tables">Forms</div>
+      <a href="../exit.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-log-out"></i>
+        <div data-i18n="Tables">Log Out</div>
       </a>
     </li>
     

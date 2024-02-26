@@ -39,6 +39,7 @@ $hasil = $db->query($tampilan);
                             <th scope="col">Nama</th>
                             <th scope="col">Alamat</th>
                             <th scope="col">Telepon</th>
+                            <th scope="col">Action</th>
                             <!-- <th scope="col" class="text-center">Action</th> -->
                         </tr>
                     </thead>

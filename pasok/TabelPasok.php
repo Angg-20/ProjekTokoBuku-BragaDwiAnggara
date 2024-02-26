@@ -34,10 +34,10 @@ $hasil = $db->query($tampilan);
                     <thead>
                         <tr>
                             <th scope="col">No</th>
-                            <th scope="col">Id</th>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Alamat</th>
-                            <th scope="col">Telepon</th>
+                            <th scope="col">Id Distributor</th>
+                            <th scope="col">Id Buku</th>
+                            <th scope="col">Jumlah</th>
+                            <th scope="col">Tanggal</th>
                             <!-- <th scope="col" class="text-center">Action</th> -->
                         </tr>
                     </thead>

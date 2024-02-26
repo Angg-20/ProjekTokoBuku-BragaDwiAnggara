@@ -40,7 +40,7 @@ $hasil = $db->query($tampilan);
                             <th scope="col">Telepon</th>
                             <th scope="col">status</th>
                             <th scope="col">username</th>
-                            <!-- <th scope="col" class="text-center">Action</th> -->
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
