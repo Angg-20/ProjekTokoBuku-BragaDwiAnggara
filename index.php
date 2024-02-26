@@ -1,4 +1,3 @@
-
 <?php include "layout/header.php" ?>
 <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar">
@@ -25,7 +24,6 @@
           </div>
         </div>
         <!-- / Content -->
-
       </div>
     </div>
   </div>
