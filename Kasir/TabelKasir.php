@@ -40,8 +40,6 @@ $hasil = $db->query($tampilan);
                             <th scope="col">Telepon</th>
                             <th scope="col">status</th>
                             <th scope="col">username</th>
-                            <th scope="col">password</th>
-                            <th scope="col">akses</th>
                             <!-- <th scope="col" class="text-center">Action</th> -->
                         </tr>
                     </thead>
@@ -55,10 +53,9 @@ $hasil = $db->query($tampilan);
                                 <td><?= $dis['telepon']; ?></td>
                                 <td><?= $dis['status']; ?></td>
                                 <td><?= $dis['username']; ?></td>
-                                <td><?= $dis['password']; ?></td>
-                                <td><?= $dis['akses']; ?></td>
                                 <td>
-                                    <a href="edit.php" class="btn btn-primary">Edit</a>
+                                    <a href="edit.php?id=<?= $dis['id_kasir']; ?>" class="btn btn-primary" style="width: 90px;">Edit</a>
+                                    <a href="delete.php?id=<?= $dis['id_kasir']; ?>" class="btn btn-danger" style="width: 90px;">Hapus</a>
                                 </td>
                             </tr>
                             <?php $i++; ?>

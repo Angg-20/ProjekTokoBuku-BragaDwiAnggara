@@ -22,10 +22,6 @@
 
                     <form action="Distributor.php" method="post">
                         <div class="mb-3">
-                            <label for="distributor" class="form-label">ID Distributor</label>
-                            <input type="text" class="form-control" id="distributor" name="distributor" autocomplete="off">
-                        </div>
-                        <div class="mb-3">
                             <label for="namadistributor" class="form-label">Nama Distributor</label>
                             <input type="text" class="form-control" id="namadistributor" name="namadistributor" autocomplete="off">
                         </div>

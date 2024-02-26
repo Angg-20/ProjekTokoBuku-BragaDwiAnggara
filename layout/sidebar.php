@@ -48,7 +48,7 @@
   <ul class="menu-inner py-1">
 
     <!-- Dashboard -->
-    <li class="menu-item active">
+    <li class="menu-item">
       <a href="../index.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div data-i18n="Analytics">Dashboard</div>
@@ -92,18 +92,6 @@
       <a href="../Penjualan/TabelPenjualan.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-table"></i>
         <div data-i18n="Tables">Tabel Penjualan</div>
-      </a>
-    </li>
-    
-    
-    <!-- Forms & Tables -->
-    <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms</span></li>
-    
-    <!-- Forms -->
-    <li class="menu-item">
-      <a href="tables-basic.html" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-detail"></i>
-        <div data-i18n="Tables">Forms</div>
       </a>
     </li>
     

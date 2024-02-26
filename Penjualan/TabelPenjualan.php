@@ -53,6 +53,10 @@ $hasil = $db->query($tampilan);
                                 <td><?= $dis['jumlah']; ?></td>
                                 <td><?= $dis['total']; ?></td>
                                 <td><?= $dis['tanggal']; ?></td>
+                                <td>
+                                    <a href="edit.php?id=<?= $dis['id_penjualan']; ?>" class="btn btn-primary" style="width: 90px;">Edit</a>
+                                    <a href="delete.php?id=<?= $dis['id_penjualan']; ?>" class="btn btn-danger" style="width: 90px;">Hapus</a>
+                                </td>
                             </tr>
                             <?php $i++; ?>
                         <?php  }  ?>

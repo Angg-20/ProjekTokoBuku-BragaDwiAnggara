@@ -16,4 +16,6 @@
     )";
 
     $db->query($data);
+
+    header('location:TabelBuku.php');
 ?>

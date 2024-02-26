@@ -26,6 +26,8 @@ $hasil = $db->query($tampilan);
             <!-- / Navbar -->
 
             <div class="container">
+            
+            <a href="from.php" class="btn btn-primary mt-3">Tambah Data</a>
 
                 <!-- awal table -->
 
@@ -34,9 +36,10 @@ $hasil = $db->query($tampilan);
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Id</th>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Alamat</th>
-                            <th scope="col">Telepon</th>
+                            <th scope="col">Judul</th>
+                            <th scope="col">No ISBN</th>
+                            <th scope="col">Stok</th>
+                            <th scope="col">Action</th>
                             <!-- <th scope="col" class="text-center">Action</th> -->
                         </tr>
                     </thead>
@@ -48,14 +51,11 @@ $hasil = $db->query($tampilan);
                                 <td><?= $dis['id_buku']; ?></td>
                                 <td><?= $dis['judul']; ?></td>
                                 <td><?= $dis['noisbn']; ?></td>
-                                <td><?= $dis['penulis']; ?></td>
-                                <td><?= $dis['penerbit']; ?></td>
-                                <td><?= $dis['tahun']; ?></td>
                                 <td><?= $dis['stok']; ?></td>
-                                <td><?= $dis['harga_pokok']; ?></td>
-                                <td><?= $dis['harga_jual']; ?></td>
-                                <td><?= $dis['ppn']; ?></td>
-                                <td><?= $dis['diskon']; ?></td>
+                                <td>
+                                    <a href="edit.php?id=<?= $dis['id_buku']; ?>" class="btn btn-primary" style="width: 90px;">Edit</a>
+                                    <a href="delete.php?id=<?= $dis['id_buku']; ?>" class="btn btn-danger" style="width: 90px;">hapus</a>
+                                </td>
                             </tr>
                             <?php $i++; ?>
                         <?php  }  ?>

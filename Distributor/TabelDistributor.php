@@ -27,6 +27,8 @@ $hasil = $db->query($tampilan);
 
             <div class="container">
 
+                <a href="from.php" class="btn btn-primary mt-3">Tambah Data</a>
+
                 <!-- awal table -->
 
                 <table class="table mt-5 mb-5">
@@ -49,6 +51,10 @@ $hasil = $db->query($tampilan);
                                 <td><?= $dis['nama_distributor']; ?></td>
                                 <td><?= $dis['alamat']; ?></td>
                                 <td><?= $dis['telepon']; ?></td>
+                                <td>
+                                    <a href="edit.php?id=<?= $dis['id_distributor']; ?>" class="btn btn-primary" style="width: 90px;">Edit</a>
+                                    <a href="delete.php?id=<?= $dis['id_distributor']; ?>" class="btn btn-danger" style="width: 90px;">Hapus</a>
+                                </td>
                             </tr>
                             <?php $i++; ?>
                         <?php  }  ?>
