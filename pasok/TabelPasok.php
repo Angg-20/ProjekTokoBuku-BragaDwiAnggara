@@ -30,7 +30,7 @@ $hasil = $db->query($tampilan);
                 <a href="from.php" class="btn btn-primary mt-3">Tambah Data</a>
 
                 <!-- awal table -->
-                <table class="table mt-5 mb-5">
+                <table class="table mt-5 mb-5 text-center">
                     <thead>
                         <tr>
                             <th scope="col">No</th>
@@ -38,7 +38,7 @@ $hasil = $db->query($tampilan);
                             <th scope="col">Id Buku</th>
                             <th scope="col">Jumlah</th>
                             <th scope="col">Tanggal</th>
-                            <!-- <th scope="col" class="text-center">Action</th> -->
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>

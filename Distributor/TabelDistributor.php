@@ -31,7 +31,7 @@ $hasil = $db->query($tampilan);
 
                 <!-- awal table -->
 
-                <table class="table mt-5 mb-5">
+                <table class="table mt-5 mb-5 text-center">
                     <thead>
                         <tr>
                             <th scope="col">No</th>
