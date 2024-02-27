@@ -1,3 +1,16 @@
+<?php 
+
+  session_start();
+
+
+  // print_r($_SESSION);
+
+    if(!isset($_SESSION['user'])){
+      header ("location:../login.php");
+    }
+
+?>
+
 <?php
 include "../layout/header.php";
 ?>
@@ -16,7 +29,7 @@ include "../layout/header.php";
             <?php include "../layout/navbar.php"; ?>
 
             <div class="container">
-
+<p>Ijul Bau tai</p>
                 <div class="card p-5 mt-5">
                     <h4 class="mt-3 mb-3">Buku</h4>
 

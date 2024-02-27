@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include "koneksi_database.php";
 
 $error = '';
@@ -16,6 +18,9 @@ if (isset($_POST["login"])) {
             $userData = mysqli_fetch_assoc($result);
 
             if ($password === $userData['password']) {
+                $_SESSION ['user'] = $userData['username'];
+                $_SESSION ['akses'] = $userData['akses'];
+
                 header("Location: index.php");
                 exit();
             } else {
